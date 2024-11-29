@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    display: block;
+}
+
+.task-manager {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.task-manager-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 20px
+}
+
+.task-manager .task-item {
+    width: 50%;
+    display: block;
+    margin: 5px;
+}
+
+.task-manager .btn {
+    width: 50%;
+    height: 20px;
+}
+
+.task-manager ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.task-manager ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-block: 10px;
+}
+
+.completed {
+    color: blue
+}
+
+.not-completed {
+    color: red
+}
