@@ -8,13 +8,17 @@ function TaskManager() {
         title: "",
         completed: false
     }
+
     const [tasks, setTasks] = useState([])
+
     const addTask = (task) => {
         setTasks([...tasks, task])
     }
+
     const removeTask = (id) => {
         setTasks(tasks.filter((task) => task.id !== id))
     }
+
     const toggleTaskCompletion = (id) => {
         setTasks(tasks.map((task) =>
             task.id === id ? { ...task, completed: !task.completed } : task)
